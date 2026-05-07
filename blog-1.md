@@ -1,5 +1,6 @@
-# "Any" vs "Unknown" in TypeScript
-When I first started, I thought any was a superpower it lets you do anything! But I quickly learned it's more like a "type safety hole".
+## "Any" vs "Unknown" in TypeScript
+In TypeScript, "any" allows a variable to hold any type of value, but it also disables type checking. Because of this, TypeScript cannot catch mistakes, which may cause runtime errors. On the other hand, "unknown" is safer because TypeScript forces us to check the type before using the value. This process is called type narrowing, and it helps maintain type safety in our code.
+
 
 ## Why "any" is dangerous
 In TypeScript, both any and unknown can store any kind of value, but they behave very differently.

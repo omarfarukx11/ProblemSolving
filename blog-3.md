@@ -1,4 +1,4 @@
-# How Generics Enable Reusable and Type Safe Code in TypeScript
+## How Generics Enable Reusable and Type Safe Code in TypeScript
 Generics in TypeScript allow us to create reusable functions, classes, and components that can work with different types of data while still maintaining strict type safety. without Generics, developers often use any to make code flexible. However, using any removes TypeScript’s type checking, which can lead to unexpected runtime errors.
 
 
