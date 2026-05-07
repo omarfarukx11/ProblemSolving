@@ -1,7 +1,7 @@
 # "Any" vs "Unknown" in TypeScript
 When I first started, I thought any was a superpower it lets you do anything! But I quickly learned it's more like a "type safety hole".
 
-# Why "any" is dangerous
+## Why "any" is dangerous
 In TypeScript, both any and unknown can store any kind of value, but they behave very differently.
 any is called a "type safety hole" because it completely disables TypeScript's type checking. When we use any, we are basically telling TypeScript
 "Stop checking my code".
@@ -19,7 +19,7 @@ TypeError: value.toUpperCase is not a function
 That is why any is dangerous. It removes the main benefit of TypeScript: finding errors before the code runs.
 
 
-# Why "unknown" is the safer choice
+## Why "unknown" is the safer choice
 unknown is the safer alternative. like any, unknown can also hold any type of value. but TypeScript does not allow us to use that value directly until we first check its type.
 
 * Example:
