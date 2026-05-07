@@ -3,7 +3,7 @@ const filterEvenNumbers = (arr : number[]) => {
    return arr.filter((number) => number % 2 === 0)
 }
 const problemOneResult =  filterEvenNumbers([1, 2, 3, 4, 5, 6])
-console.log(problemOneResult);
+
 
 
 
@@ -20,16 +20,16 @@ const ProblmeTwoResult = reverseString("typescript");
 
 
 
-
 // Problem 3
-const StringOrNumber = (value : number | string) => {
+type StringOrNumber = string | number
+const checkType = (value : StringOrNumber ) => {
    if(typeof value === "number") {
       return "Number";
    } else if (typeof value === "string") {
       return "String";
    }
 }
-const problemThreeResult = StringOrNumber('hello')
+const problemThreeResult = checkType('hello')
 
 
 
@@ -42,7 +42,7 @@ const getProperty = <X> (object: X , key : keyof X) => {
 }
 const user = { id: 1, name: "John Doe", age: 21 };
 const problemFourResult = getProperty(user, "name");
-console.log(problemFourResult);
+
 
 
 
