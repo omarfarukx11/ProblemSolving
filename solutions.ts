@@ -1,15 +1,9 @@
 // Problem 1 
-const filterEvenNumbers = (value : number[]) => {
-   let evenNumberArray : number[] = []
-   value.filter((number) => {
-     if(number % 2 === 0) {
-      evenNumberArray.push(number)
-     }
-   })
-   return evenNumberArray
+const filterEvenNumbers = (arr : number[]) => {
+   return arr.filter((number) => number % 2 === 0)
 }
 const problemOneResult =  filterEvenNumbers([1, 2, 3, 4, 5, 6])
-
+console.log(problemOneResult);
 
 
 
@@ -48,7 +42,7 @@ const getProperty = <X> (object: X , key : keyof X) => {
 }
 const user = { id: 1, name: "John Doe", age: 21 };
 const problemFourResult = getProperty(user, "name");
-
+console.log(problemFourResult);
 
 
 
@@ -105,14 +99,8 @@ const problemSixResult = student.getDetails();
 
 
 // Problem 7
-const getIntersection = (value1 : number[] , value2 : number[] ) => {
-   let intersection : number[] = [];
-   value1.filter((v) => {
-     if(value2.includes(v)){
-      intersection.push(v)
-     }
-   })
-   return intersection;
+const getIntersection = (arr1 : number[] , arr2 : number[] ) => {
+   return arr1.filter((value) => arr2.includes(value))
+
 }
 const problemSevenResult = getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])
-
